@@ -1,16 +1,29 @@
-# React + Vite
+# Bryant Neighborhood Oral History
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This React/vite code serves as a frontend prototype for an oral history project by/in the Bryant neighborhood of South Minneapolis.
 
-Currently, two official plugins are available:
+The React site communicates via FastAPI with a PostgreSQL with PostGIS extension.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Auth is handled for now by offloading credential storage, MFA, and JWT issuance to Microsoft Entra External ID.
 
-## React Compiler
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# Running locally
 
-## Expanding the ESLint configuration
+## Prerequisites
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[Node.js](https://nodejs.org) (v18 or higher) and `npm` should be installed on your machine.
+
+## Getting Started
+
+1. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+2. **Start the development server**
+   ```bash
+   npm run dev
+   ```
+
+3. **Open the app**
+   Visit `http://localhost:5173` (Vite) or `http://localhost:3000` (Create React App) in your browser.
